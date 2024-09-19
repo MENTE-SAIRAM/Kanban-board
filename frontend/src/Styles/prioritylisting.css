@@ -1,0 +1,73 @@
+/* Container for all priority columns */
+.priority-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 20px; /* Space between columns */
+    flex-wrap: wrap;
+    position: relative; /* Ensure responsiveness */
+  }
+  
+  /* Style for each priority column */
+  .priority-column {
+    flex: 1; /* Allow columns to grow equally */
+    /* Maximum width of each column */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  position: relative;
+  }
+  
+  /* Heading for each priority column */
+  .priority-column h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  .container-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  position: relative;
+  }
+  
+  .container-2, .container-3 {
+    display: flex;
+    align-items: center; 
+    position: relative;/* Align items vertically in the center */
+  }
+  
+  .container-2 img, .container-3 img {
+    margin: 10px 5px; /* Spacing around images */
+  }
+  
+  .container-2 span, .container-3 span {
+    margin: 10px 5px; /* Spacing around the span */
+    text-align: center; /* Center text inside the span */
+    font-size: 15px; /* Font size for the span */
+    padding: 10px 0; /* Top and bottom padding for the span */
+    display: inline-block; /* Ensure span behaves like an inline block element */
+    vertical-align: middle; /* Align span vertically with images */
+  }
+  .sort-options {
+    display: flex;
+    flex-direction: column;
+    position: absolute; /* Absolute positioning */
+    top: 100%; /* Position below the container-3 */
+    right: 0; /* Align to the right of the container-3 */
+    background-color: white; /* Background color for visibility */
+    border: 1px solid #ddd; /* Border for better visibility */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for dropdown */
+    z-index: 10; /* Ensure it appears above other elements */
+  }
+  
+  .sort-options div {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .sort-options div:hover {
+    background-color: #f0f0f0; /* Hover effect */
+  }
